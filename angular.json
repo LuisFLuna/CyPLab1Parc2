@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "laboratorio1Parcial2CyP": {
+    "angular-integration-testing": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/laboratorio1Parcial2CyP",
+            "outputPath": "dist/angular-integration-testing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -57,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "laboratorio1Parcial2CyP:build"
+            "browserTarget": "angular-integration-testing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "laboratorio1Parcial2CyP:build:production"
+              "browserTarget": "angular-integration-testing:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "laboratorio1Parcial2CyP:build"
+            "browserTarget": "angular-integration-testing:build"
           }
         },
         "test": {
@@ -102,7 +103,7 @@
         }
       }
     },
-    "laboratorio1Parcial2CyP-e2e": {
+    "angular-integration-testing-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "laboratorio1Parcial2CyP:serve"
+            "devServerTarget": "angular-integration-testing:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "laboratorio1Parcial2CyP:serve:production"
+              "devServerTarget": "angular-integration-testing:serve:production"
             }
           }
         },
@@ -131,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "laboratorio1Parcial2CyP"
+  "defaultProject": "angular-integration-testing"
 }
